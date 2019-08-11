@@ -1,0 +1,13 @@
+.container {
+    margin: 0 auto; //centers things left to right
+    max-width: 750px; //max width for the site
+    padding: 1rem; //padding on all four sides so content is not pressed up right against browser
+
+    display: flex; //enables flexbox
+    flex-direction: column; //vertical top to bottom layout
+    min-height: 100vh; //viewport hieght - based on the screen height
+}
+
+.content {
+    flex-grow: 1; //allow container to grow as needed to leave just enought space for the footer
+}

@@ -1,0 +1,31 @@
+.posts {
+    list-style-type: none; //removes the numbers next to each post
+    margin: 0;
+}
+
+.post {
+    margin: 1rem 0; //1rem is for top and bottom, 0 is for left and right
+
+    a {
+        background: #f4f4f4; //set background to an offwhite
+        color: #000000; //sets text color
+        display: block; //control spacing
+        padding: 1rem; //space between text and edge of offwhite box
+        text-decoration: none; //removes the underline
+    }
+
+    a:hover {
+        background: #e4e4e4;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    p{
+        color: #777777;
+        font-size: .8rem;
+        font-style: italic;
+        margin-bottom: 0;
+    }
+}
