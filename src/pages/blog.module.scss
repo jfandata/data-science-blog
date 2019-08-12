@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #777777;
+}
+
 .post {
     margin: 1rem 0; //1rem is for top and bottom, 0 is for left and right
 

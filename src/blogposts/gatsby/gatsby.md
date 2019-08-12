@@ -1,7 +1,7 @@
 ---
 title: "The Best Data Science Learning Blog's First Post"
 author: "Author 1"
-date: "2019-08-01"
+date: "2019-08-11"
 tags: ["Gatsby"]
 ---
 

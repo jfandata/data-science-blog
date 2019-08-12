@@ -26,6 +26,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── LICENSE
     ├── package-lock.json
     ├── package.json
+    ├── .env
     └── README.md
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
@@ -50,7 +51,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+12. **`.env`**: Customize development environment. Set graphQL IDE to use Playground. Also, place to add headless CMS authentication keys. NOTE: Original instruction was to 1. create ".env.development" in root folder, 2. install: "npm --save-dev env-cmd", 3. in file "gatsby-config.js", under develop, add "env-cmd .env.development". However, resulted in erorr. Using 64bit Windows 10, FIX: renamed ".env.develop" to ".env" and in "gatsby-config.js" under develop, only added "env-cmd".
+
+13. **`README.md`**: A text file containing useful reference information about your project.
 
 ## 🎓 Learning Gatsby
 

@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Novice. Practice. Mastered!',
-    author: 'THE Best Data Science Group Ever!',
+    author: 'The Best Data Science Learning Group Ever!',
   },
 
   plugins: [

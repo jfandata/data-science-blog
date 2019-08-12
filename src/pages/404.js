@@ -9,7 +9,7 @@ const NotFound = () => {
         <Layout>
             <Head title="404" />
             <h1>Well, this is awkward...the page you are looking for doesn't exist.</h1>
-            <p>Lets head <Link to="/">Home</Link> and try again.</p>
+            <p>Lets head <Link to="/"><strong>Home</strong></Link> and try again.</p>
         </Layout>
     )
 }

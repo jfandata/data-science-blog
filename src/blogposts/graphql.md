@@ -1,11 +1,11 @@
 ---
-title: "Learn about GraphQL"
+title: "Blog Post Place Holder 1"
 author: "Author 2"
 date: "2019-08-03"
 tags: ["GraphQL"]
 ---
 
-In this post you'll learn about GraphQL
+Lorem ipsum
 
 
 

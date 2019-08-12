@@ -50,7 +50,7 @@ const IndexPage = () => {
                         <li className={blogStyles.post}>
                             <Link to={`/blog/${edge.node.fields.slug}`}>
                             <h2>{edge.node.frontmatter.title}</h2>
-                            <p>{edge.node.frontmatter.author} - {edge.node.timeToRead} Min Read - {edge.node.frontmatter.date} - Category: {edge.node.frontmatter.tags}</p>
+                            <p>By {edge.node.frontmatter.author} - {edge.node.timeToRead} Min Read - {edge.node.frontmatter.date} - Category: {edge.node.frontmatter.tags}</p>
                             <p>{edge.node.excerpt}</p>
                             </Link>
                         </li>

@@ -9,8 +9,9 @@ const Menu = () => {
         <nav>
             <ul className={menuStyles.navList}>
                 <li><Link className={menuStyles.navItem} activeClassName={menuStyles.activeNavItem} to="/">Home</Link></li>
-                <li><Link className={menuStyles.navItem} activeClassName={menuStyles.activeNavItem} to="/blog">Blog</Link></li>
                 <li><Link className={menuStyles.navItem} activeClassName={menuStyles.activeNavItem} to="/about">About</Link></li>
+                <li><Link className={menuStyles.navItem} activeClassName={menuStyles.activeNavItem} to="/blog">Blog</Link></li>
+                <li><Link className={menuStyles.navItem} activeClassName={menuStyles.activeNavItem} to="/learningresources">Resources</Link></li>
                 <li><Link className={menuStyles.navItem} activeClassName={menuStyles.activeNavItem} to="/contact">Contact</Link></li>
              </ul>
         </nav>

@@ -1,11 +1,11 @@
 ---
-title: "Test Post 3"
+title: "Blog Post Place Holder 5"
 author: "Author 3"
 date: "2019-05-08"
 tags: ["Test"]
 ---
 
-In this post you'll learn about React.
+Lorem ipsum
 
 
 

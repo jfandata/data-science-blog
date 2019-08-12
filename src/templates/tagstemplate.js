@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
+import blogStyles from '../pages/blog.module.scss'
 
 export const query = graphql`
     query ($tag: String!) {
@@ -18,7 +19,8 @@ export const query = graphql`
                     }
                     frontmatter {
                         title
-                        date (formatString: "MM/DD/YYYY")
+                        author
+                        date (formatString: "MMMM DD, YYYY")
                         tags
                     }
                     excerpt (pruneLength: 200)
@@ -37,16 +39,26 @@ const Tags = ({ pageContext, data }) => {
     } tagged with "${tag}"`
     return (
         <Layout>
-            <Head title={tag}/>
-            <h1>Tag - {tag}</h1>
+            <Head title={tag} />
+            <h2>Tag - {tag}</h2>
             <p>{tagHeader} (See <Link to="/tags">all tags</Link>)</p>
-            <ul>
+            <ul className={blogStyles.posts}>
                 {edges.map(({ node }) => {
                     const { slug } = node.fields
                     const { title } = node.frontmatter
+                    const { author } = node.frontmatter
+                    const { date } = node.frontmatter
+                    const { timeToRead } = node
+                    const { excerpt } = node
                     return (
-                        <li key={slug}>
-                            <Link to={`/blog/${slug}`}>{title}</Link>
+                        <li key={slug} className={blogStyles.post}>
+                            <Link to={`/blog/${slug}`}>
+                            <h2>
+                            {title}
+                            </h2>
+                            <p>By {author} - {timeToRead} Min Read - {date}</p>
+                            <p>{excerpt}</p>
+                            </Link>
                         </li>
                     )
                 })}

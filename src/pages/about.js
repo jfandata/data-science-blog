@@ -7,11 +7,16 @@ const AboutPage = () => {
     return (
         <Layout>
             <Head title="About" />
-            <h1>About US</h1>
+            <h1>About</h1>
             <br></br>
-            <p>Novice.Practice.Mastered! is a data science learning blog.</p>
-            <p>Docendo discimus! The best way to learn is to teach.</p>
-            <p>This learning blog is the collaborative effort of students from the Washington University St. Louis Data Analytics Certification, cohort September 2018.</p>
+            <p>Novice.Practice.Mastered! is a data science learning blog. It is backed by the philosophy "docendo discimus", which
+            is latin for "by teaching, we learn".</p>
+            <p>This learning blog is the collaborative effort of graduates from the <a href="https://bootcamp.tlcenter.wustl.edu/" target="_blank">
+            Washington University St. Louis Data Analytics Certification</a>, cohort September 2018.</p>
+
+
+
+
             
         </Layout>
     )

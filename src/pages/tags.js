@@ -21,13 +21,13 @@ const TagsPage = () => {
     return (
         <Layout>
             <Head title="Tags" />
-            <h1>Tags</h1>
+            <h2>Tags</h2>
             <ul>
                 {data.allMarkdownRemark.group.map((tag) => {
                     return (
                         <li key={tag.fieldValue}>
                             <Link to={`/tags/${kebabCase(tag.fieldValue)}`}>
-                                {tag.fieldValue}</Link> ({tag.totalCount})
+                                <strong>{tag.fieldValue}</strong></Link> ({tag.totalCount})
                         </li>
                     )
                 })}
